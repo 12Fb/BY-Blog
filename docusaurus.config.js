@@ -39,6 +39,7 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
+        
         docs: {
           sidebarPath: './sidebars.js',
           // Please change this to your repo.
@@ -53,6 +54,7 @@ const config = {
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
+       
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -62,11 +64,13 @@ const config = {
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+    //路由配置
     ({
+      
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: "By's Blog",
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
@@ -76,7 +80,7 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Home',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
@@ -90,47 +94,68 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: '在线coding',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'CodePen',
+                href:'https://codepen.io/'
               },
+              {
+                label: 'TypeScript',
+                href: 'https://www.typescriptlang.org/zh/play#'
+
+              }
             ],
           },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        
+          
+        ]
       },
+      // footer: {
+      //   style: 'dark',
+      //   links: [
+      //     {
+      //       title: 'Docs',
+      //       items: [
+      //         {
+      //           label: 'Tutorial',
+      //           to: '/docs/intro',
+      //         },
+      //       ],
+      //     },
+      //     {
+      //       title: 'Community',
+      //       items: [
+      //         {
+      //           label: 'Stack Overflow',
+      //           href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+      //         },
+      //         {
+      //           label: 'Discord',
+      //           href: 'https://discordapp.com/invite/docusaurus',
+      //         },
+      //         {
+      //           label: 'Twitter',
+      //           href: 'https://twitter.com/docusaurus',
+      //         },
+      //       ],
+      //     },
+      //     {
+      //       title: 'More',
+      //       items: [
+      //         {
+      //           label: 'Blog',
+      //           to: '/blog',
+      //         },
+      //         {
+      //           label: 'GitHub',
+      //           href: 'https://github.com/facebook/docusaurus',
+      //         },
+      //       ],
+      //     },
+      //   ],
+      //   copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      // },
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
