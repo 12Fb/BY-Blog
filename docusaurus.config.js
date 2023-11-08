@@ -104,7 +104,11 @@ const config = {
                 label: 'TypeScript',
                 href: 'https://www.typescriptlang.org/zh/play#'
 
-              }
+              },
+              {
+                label: 'JsRun',
+                href: "https://runjs.work/d9424c"
+              },
             ],
           },
         
